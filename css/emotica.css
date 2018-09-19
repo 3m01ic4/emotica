@@ -1,0 +1,125 @@
+
+@font-face {
+    font-family: 'alanis_handregular';
+    src: url('alanis-hand.regular-webfont.woff2') format('woff2'),
+         url('alanis-hand.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	color: #f8432b;
+}
+
+body {
+	color: black;
+}
+
+h2 {
+	color:  #f8432b;
+}
+
+main {
+	height: 100%;
+}
+
+.nav-link, .navbar-brand {
+	color: white;
+	margin-right: 35px;
+}
+
+.navbar-brand:hover {
+	color: #f8432b;
+}
+
+.nav-link:hover {
+	background-color: #f8432b;
+	color: white;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: white;
+	color: #E85144;
+	border: 1px solid #f8432b;
+	border-radius: 5px;
+}
+
+.btn {
+	background-color: #f8432b;
+	color: white; 	 
+}
+
+.jumbotron {
+	color: white;
+	background-color: white;
+	background-image: url('../img/crowd.gif');
+	background-size: cover;
+	background-position: center; 
+	border-bottom: 1px solid #f8432b;
+	height: 80%;
+    background-repeat: stretch no-repeat;
+    background-attachment: fixed;
+}
+
+#navbarTopEmotica {
+	color: #f8432b;
+	font-size: large;
+}
+
+#editor {
+        width: 100%;
+        height: 100%;
+}
+
+#emotions {
+	color: white;
+	font-size: 20px;
+}
+
+#emoticaBig {
+	font-family: "alanis_handregular";
+	font-size: 165px;
+	color: #f8432b;
+	height: 130px;
+}
+
+#copyEmo {
+	float: right;
+}
+
+#social {
+	width: 300px;
+	float: left;
+	color: #f8432b;
+}
+
+#social a {
+	color: #f8432b;
+}
+
+.footer {
+    position: fixed;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+	background-color: white;
+	color: #f8432b;
+	max-width: 100%;    
+}
+
+#canvas {background:url(http://i.imgur.com/5RIXWIE.png)}
+
+#about, #coaching, #contact {
+	margin-top: 100px;
+	margin-bottom: 20px;
+	max-width: 720px;
+}
+
+#foto {
+	display: block;
+	margin: 0 auto;
+}
