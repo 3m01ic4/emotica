@@ -16,14 +16,14 @@ $( document ).ready(function() {
 
   
 var editBtn = document.getElementById('editBtn');
-var editables = document.querySelectorAll('#about, #coachig, #contact, #mainText')
+var editables = document.querySelectorAll('#about, #coachig, #contact')
  
 editBtn.addEventListener('click', function(e) {
   if (!editables[0].isContentEditable) {
     editables[0].contentEditable = 'true';
     editables[1].contentEditable = 'true';
     editables[2].contentEditable = 'true';
-    editables[3].contentEditable = 'true';
+    //editables[3].contentEditable = 'true';
 
     editBtn.innerHTML = 'Save Changes';
     editBtn.style.backgroundColor = '#6F9';
@@ -32,7 +32,7 @@ editBtn.addEventListener('click', function(e) {
     editables[0].contentEditable = 'false';
     editables[1].contentEditable = 'false';
     editables[2].contentEditable = 'false';
-    editables[3].contentEditable = 'false';
+    //editables[3].contentEditable = 'false';
     // Change Button Text and Color
     editBtn.innerHTML = 'Enable Editing';
     editBtn.style.backgroundColor = '#F96';
@@ -56,9 +56,9 @@ if (typeof(Storage) !== "undefined") {
   if (localStorage.getItem('contact') !== null) {
     editables[2].innerHTML = localStorage.getItem('contact');
   } 
-  if (localStorage.getItem('mainText') !== null) {
-    editables[3].innerHTML = localStorage.getItem('mainText');
-  } 
+ // if (localStorage.getItem('mainText') !== null) {
+  //  editables[3].innerHTML = localStorage.getItem('mainText');
+//  } 
   
 }
 

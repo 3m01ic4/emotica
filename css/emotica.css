@@ -123,3 +123,10 @@ main {
 	display: block;
 	margin: 0 auto;
 }
+
+#mainText {
+	text-align: right;
+	color: grey ;
+	margin-right: 50px;
+}
+	
