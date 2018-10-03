@@ -12,6 +12,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	color: #f8432b;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -20,6 +21,16 @@ body {
 
 h2 {
 	color:  #f8432b;
+}
+
+h5 {
+	color:  #fe0000;
+	font-size: larger;
+}
+
+h6 {
+	color:  #fe0000;
+	font-size: medium;
 }
 
 main {
@@ -63,7 +74,7 @@ main {
 	color: white;
 	background-color: white;
 	background-image: url('../img/crowd.gif');
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	background-position: top; 
 	border-bottom: 1px solid #f8432b;
 	height: 80%;
@@ -97,11 +108,12 @@ main {
 	display: none;
 	position: fixed;
 	left: 35px;
-	top: 50px;
+	top: 0px;
 	font-family: "alanis_handregular";
 	font-size: 55px;
 	color: #f8432b;
 	text-align: right;
+	line-height: 25px;
 }
 
 #emoticaSide a {
@@ -135,7 +147,7 @@ main {
 
 .footer {
     position: fixed;
-    height: 30px;
+    min-height: 30px;
     bottom: 0;
     width: 100%;
 	background-color: white;
@@ -149,13 +161,20 @@ main {
 	padding-top: 75px;
 	margin-bottom: 20px;
 	max-width: 720px;
-	padding-left: 35px;
-	padding-right: 35px;
+	padding-left: 55px;
+	padding-right: 55px;
+}
+
+
+#contact {
+	padding-bottom: 55px;
 }
 
 #foto {
 	display: block;
 	margin: 0 auto;
+	width: 50%;
+	height: 50%;
 }
 
 #mainText {
@@ -174,6 +193,6 @@ main {
 	text-decoration: none;
 }
 
-.fa-angle-up {
-	font-size: 35px;
+#emoticaNavIcon {
+	color: #f8432b;
 }

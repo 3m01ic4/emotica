@@ -1,4 +1,4 @@
-/* global $ Typed */
+/* global $ google Typed */
 
 $(document).ready(function() {
 
@@ -30,18 +30,38 @@ $(document).ready(function() {
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
   
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  
   function onResize() {
+    
+     if ($(window).width() >= 1485) {
+      $("#mainText").css("padding-bottom", $(window).height() - $("#crowd").height() -  $("#emoticaFooter").height());
+     }
+     
      if ($(window).width()<1040) {
-       $("#emoticaTopLink").html('<i class="fas fa-angle-up"></i><br/>E');
-       $("#emoticaSide").css("left","5px");
+       $("#emoticaTopLink").html('<i class="fas fa-angle-up">');
+       $("#emoticaSide").css("left","15px");
+       $("#emoticaSide").css("width","25px");
      } else {
-       $("#emoticaTopLink").html('Emotica <i class="fas fa-angle-up"></i>');
-       $("#emoticaSide").css("left","35px");
+       $("#emoticaTopLink").html('<i class="fas fa-angle-up"></i>');
+       $("#emoticaSide").css("left","15px");
+        $("#emoticaSide").css("width","auto");
      }
      if ($(window).width()<815) {
        $("#emoticaSide").hide();
      } else {
        $("#emoticaSide").show();
+     }
+     
+     if ($(window).height() > $(window).width() ||  $(window).width() <= 1530) {
+       $("#crowd").height($(window).width()/435*250);
+     }
+     
+     if ($(window).width() <= 1625) {
+       $("#emoticaMap").width($(window).width() / 1625 * 767);
+       $("#emoticaMap").height($(window).width() / 1625 * 680);
      }
   } 
 
