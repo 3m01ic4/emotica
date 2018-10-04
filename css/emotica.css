@@ -77,7 +77,8 @@ main {
 	background-size: 100% 100%;
 	background-position: top; 
 	border-bottom: 1px solid #f8432b;
-	height: 80%;
+	max-height: 88vh;
+	height: 88vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -160,7 +161,7 @@ main {
 #about, #coaching, #contact {
 	padding-top: 75px;
 	margin-bottom: 20px;
-	max-width: 720px;
+	max-width: 1272px;
 	padding-left: 55px;
 	padding-right: 55px;
 }
@@ -195,4 +196,9 @@ main {
 
 #emoticaNavIcon {
 	color: #f8432b;
+}
+
+#emoticaMap {
+	display: block;
+	margin: 0 auto;
 }

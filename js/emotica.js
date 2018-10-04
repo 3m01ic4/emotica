@@ -55,14 +55,16 @@ $(document).ready(function() {
        $("#emoticaSide").show();
      }
      
-     if ($(window).height() > $(window).width() ||  $(window).width() <= 1530) {
-       $("#crowd").height($(window).width()/435*250);
-     }
+    // if ($(window).height() > $(window).width() ||  $(window).width() <= 1530) {
+    //   $("#crowd").height($(window).width()/435*250);
+    // }
      
      if ($(window).width() <= 1625) {
        $("#emoticaMap").width($(window).width() / 1625 * 767);
        $("#emoticaMap").height($(window).width() / 1625 * 680);
      }
+     
+     setupFont();
   } 
 
   function onScroll() {
@@ -96,6 +98,11 @@ $(document).ready(function() {
     });
   }
   
+  function setupFont() {
+    var newSize = Math.round($(window).width() / 1281  *165);
+    $("#emoticaBig").css("font-size",newSize+"px");
+  }
+  
   $(window).on('resize', function() {
     onResize();   
   });
@@ -124,6 +131,7 @@ $(document).ready(function() {
       });
     } // End if
   });
+  
   
   onResize();
   onScroll();
